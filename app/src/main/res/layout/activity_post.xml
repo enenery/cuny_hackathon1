@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostActivity" >
+
+<LinearLayout
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <TextView
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="18dp"
+        android:id="@+id/name">
+    </TextView>
+
+    <TextView
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="4dp"
+        android:layout_width="match_parent"
+        android:text="Title"
+        android:id="@+id/title"
+        android:textSize="18dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal">
+    </TextView>
+
+
+    <TextView
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="Question"
+        android:id="@+id/question"
+        android:layout_width="fill_parent"
+        android:layout_gravity="fill_horizontal">
+    </TextView>
+
+            <ListView
+                android:gravity="center_horizontal"
+                android:layout_width="fill_parent"
+                android:id="@+id/list"
+                android:layout_height="wrap_content">
+            </ListView>
+
+
+
+
+
+</LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:onClick="answerQuestion"
+        android:src="@drawable/ic_action_new"/>
+</RelativeLayout>
